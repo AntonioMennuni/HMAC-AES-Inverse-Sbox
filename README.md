@@ -45,13 +45,13 @@ See [`doc/Report_Mennuni_Palumbo.pdf`](doc/Report_Mennuni_Palumbo.pdf) for the f
 - **Intel Quartus Prime** for synthesis, fitting, and static timing analysis on the Cyclone V target.
 - **Tcl and SDC** for Quartus project automation and timing constraints.
 
-Add the folders containing the Quartus and ModelSim executables to the system `PATH`, or configure the paths to `quartus.exe` and `vsim.exe`. The environment guide is [`doc/work_env_guide.pdf`](doc/work_env_guide.pdf). It lists Python 2.x or 3.x and standard-library modules such as `shutil` and `glob`. The current reference model imports `pathlib`, so use Python 3. All scripts use only the Python standard library; no third-party packages are required and a requirements file is unnecessary.
+Add the folders containing the Quartus and ModelSim executables to the system `PATH`, or configure the paths to `quartus.exe` and `vsim.exe`. The project scripts use Python 3 and only the Python standard library, including modules such as `shutil`, `glob`, and `pathlib`; no third-party packages or requirements file are needed.
 
 ### Directory structure
 
 | Folder | Purpose |
 | --- | --- |
-| [`doc/`](doc/) | Project documentation, including the project report and environment guide. |
+| [`doc/`](doc/) | Project documentation, including the project report. |
 | [`db/`](db/) | SystemVerilog RTL design modules. |
 | [`tb/`](tb/) | SystemVerilog testbenches. |
 | [`model/`](model/) | Python high-level reference model. |
